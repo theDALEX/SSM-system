@@ -1,8 +1,6 @@
 Project Title:
 Simple Stock Management System (SSM System)
 
-Video Demo:
-<>
 
 Overview:
 The SSM System is a web application designed to assist small shop owners with managing their inventory effectively. This user-friendly system is intended to simplify stock management, allowing shop owners to make informed decisions based on accurate sales data and predictions.
