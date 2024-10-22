@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0044cc;
+    padding: 25px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    margin-right: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 10%;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: orangered;
+    background-color: whitesmoke;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    background-color: orangered;  /* Darker orange on hover */
+    color: whitesmoke;
+}
+
+main {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Stacks logo and links vertically on small screens */
+        align-items: flex-start; /* Aligns content to the left on small screens */
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
+
+.ind_page{
+    text-align: center; 
+    font-size:40px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 10px;
+    color: orangered;
+    background-color: whitesmoke;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 17px;
+}
+.btn:hover {
+    background-color: orangered;  /* Darker orange on hover */
+    color: whitesmoke;
+}
+
+
+
+.chose{
+    text-align: center; 
+    padding: 10px;
+    padding-left: 0;
+}
+.chose_input{
+    width: 190px;
+    padding: 10px;;
+}
+
+.tabled{
+    display: flex;
+    justify-content: center;
+    margin: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.table_tr{
+    border-collapse: collapse;
+    background-color: #e0f7fa;
+}
+.table_tr th,td{
+    border: 1px solid #000000;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.table_tr th {
+    background-color: #007bb5;
+    color: white;
+}
+
+.table_tr td {
+    background-color: #b3e5fc
+}

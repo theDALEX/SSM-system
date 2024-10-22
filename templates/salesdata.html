@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}
+Sales Data
+{% endblock %}
+
+{% block content %}
+<h2 class="ind_page">Sales Data</h2>
+<form action="{{ url_for('salesdata') }}" method="POST">
+    <div class="chose">
+        <p>
+            <b>WARNING:</b>Close the Graph GUI,Please ensure that the Graph GUI is closed before proceeding.
+            Closing the Graph GUI will allow you to access the table and search for new product data.
+            If you need to view the graph again, you can reopen it after completing your current task.
+        </p>
+        <P>TEST PRODUCT IS: BOOK</P>
+        <input class="chose_input" type="text" id="Product_Name" placeholder="Product name for Data" name="Product_Name" required>
+    </div>
+    <div class="chose">
+        <button class="btn" type="submit">See Data</button>
+    </div>
+
+</form>
+
+{% if sales_data %}
+<h3>Results for {{ request.form['product_name'] }}:</h3>
+<table class="tabled">
+    <tr class="table_tr">
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Date of Sale</th>
+    </tr>
+    {% for sale in sales_data %}
+    <tr class="table_tr">
+        <td>{{ sale.product }}</td>
+        <td>{{ sale.quantity }}</td>
+        <td>{{ sale.date_of_sale }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+{% endblock %}

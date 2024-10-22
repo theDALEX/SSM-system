@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}INVENTORY - SSM System{% endblock %}
+
+{% block content %}
+    <h2 class="ind_page">INVENTORY</h2>
+    
+    <table class="tabled" border="1">
+        <tr class="table_tr">
+            <th>Product ID</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Date IN</th>
+        </tr>
+        {% for stock in stockDate %}
+        <tr class="table_tr">
+            <td>{{ stock.id }}</td>
+            <td>{{ stock.product }}</td>
+            <td>{{ stock.quantity }}</td>
+            <td>{{ stock.date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+{% endblock %}

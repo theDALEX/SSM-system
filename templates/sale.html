@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}CHECK OUT - SSM System{% endblock %}
+
+{% block content %}
+    <h2 class="ind_page">CHECK OUT</h2>
+    <form action="/sale" method="post">
+        <div class="chose">
+            <input autocomplete="off" autofocus class="chose_input" name="Product_Name" placeholder="Product Name" type="text">
+        </div>
+        <div class="chose">
+            <input name="No_ofProducts" class="chose_input" placeholder="Number of Products" type="number">
+        </div>
+        <div class="chose">
+            <button class="btn" type="submit">SELL</button>
+        </div>
+    </form>
+    
+{% endblock %}

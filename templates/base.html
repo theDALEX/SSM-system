@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSM SYSTEM</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="logo">SSM SYSTEM</h1>
+            <nav>
+                <ul>
+                    <li><a href="/add">ADD STOCK</a></li>
+                    <li><a href="/inventory">CURRENT STOCKS</a></li>
+                    <li><a href="/sale">CHECK OUT</a></li>
+                    <li><a href="/salesdata">SALES DATA</a></li>
+                    <li><a href="/prediction">SALE PREDICTION</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        <!-- Content will be inserted here by child templates -->
+        {% endblock %}
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+Add Item - SSM System
+{% endblock %}
+
+{% block content %}
+<h2 class="ind_page">ADD PRODUCT</h2>
+<form action="{{ url_for('add') }}" method="POST">
+    <div class="chose">
+        <input id="Product_Name" autocomplete="off" autofocus class="chose_input" name="Product_Name" placeholder="Enter product name" type="text" required>
+    </div>
+    <div class="chose">
+        <input id="No_ofProducts" name="No_ofProducts" class="chose_input" placeholder="Enter quantity" type="number" required>
+    </div>
+     <div class="chose">
+        <button class="btn" type="submit">ADD</button>
+    </div>
+</form>
+{% endblock %}

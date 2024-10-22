@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}PREDICTION - SSM System{% endblock %}
+
+{% block content %}
+    <h2 class="ind_page">SALES PREDICTION</h2>
+    <p class="chose">TEST PRODUCT IS: BOOK</p>
+    <form action="/prediction" method="post">
+        <div class="chose">
+            <input class="chose" type="text" id="Product_Name" name="Product_Name" placeholder="Product Name" required>
+        </div>
+        <div class="chose">
+            <button class="btn" type="submit">PREDICT</button>
+        </div>
+    </form>
+    {% if next_day_prediction %}
+    <h2 class="chose">Predicted Sales of {{ product_name }} for Tomorrow: {{ next_day_prediction }}</h2>
+    {% endif %}
+{% endblock %}
