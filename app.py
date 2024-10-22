@@ -5,7 +5,6 @@ from sqlalchemy.orm import sessionmaker
 #data visualisation and prediction
 import pandas as pd
 import matplotlib.pyplot as plt
-#from dataVIZ import get_data, predict_demand, create_plot
 
 
 
