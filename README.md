@@ -1,5 +1,4 @@
-Project Title:
-Simple Stock Management System (SSM System)
+#Simple Stock Management System (SSM System)
 
 
 Overview:
